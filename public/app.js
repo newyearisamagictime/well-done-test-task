@@ -306,6 +306,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
 
 __webpack_require__(12);
 
@@ -477,7 +482,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.close[data-v-07c2501c] {\n  z-index: 10;\n}\n.modal-content-item[data-v-07c2501c] {\n  margin-bottom: 10px;\n}\n.modal-content-item[data-v-07c2501c]:first-child {\n  margin-top: 5px;\n}\n.modal-content-item[data-v-07c2501c]:last-child {\n  margin-bottom: 0;\n}\n.modal-content-item__title[data-v-07c2501c] {\n  font-weight: bold;\n  color: #333;\n}\n.modal__content-placeholder[data-v-07c2501c] {\n  animation: blinker 1s linear infinite;\n}\n@keyframes blinker {\n50% {\n    opacity: 0.5;\n}\n}\n", ""]);
+exports.push([module.i, "\n.app-modal__close-button[data-v-07c2501c] {\n  z-index: 10;\n}\n.app-modal-content-item[data-v-07c2501c] {\n  margin-bottom: 10px;\n}\n.app-modal-content-item[data-v-07c2501c]:first-child {\n  margin-top: 5px;\n}\n.app-modal-content-item[data-v-07c2501c]:last-child {\n  margin-bottom: 0;\n}\n.app-modal-content-item__title[data-v-07c2501c] {\n  font-weight: bold;\n  color: #333;\n}\n.app-modal__inner-placeholder[data-v-07c2501c] {\n  animation: blinker 1s linear infinite;\n}\n@keyframes blinker {\n50% {\n    opacity: 0.5;\n}\n}\n", ""]);
 
 // exports
 
@@ -505,7 +510,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n.app-table[data-v-76be0b53] {\n  margin-bottom: 20px;\n}\n.app-table__wrapper[data-v-76be0b53] {\n  overflow-x: auto;\n  border-radius: 4px;\n  padding-bottom: 20px;\n}\n.app-table__content[data-v-76be0b53] {\n  border-radius: 4px;\n  border: 1px solid #eee;\n}\n.app-table__content th[data-v-76be0b53] {\n  cursor: move;\n}\n.app-table__content th[data-v-76be0b53],\n.app-table__content td[data-v-76be0b53] {\n  white-space: nowrap;\n  font-size: 12px;\n  padding: 10px;\n  border-right: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n.app-table__content th[data-v-76be0b53]:last-child,\n.app-table__content td[data-v-76be0b53]:last-child {\n  border-right: none;\n}\n.app-table__content tr:last-child td[data-v-76be0b53] {\n  border-bottom: none;\n}\n.app-table__content tr:hover td[data-v-76be0b53] {\n  cursor: pointer;\n  background: #fafafa;\n}\n.app-table-item--is-empty td[data-v-76be0b53]:before {\n  content: '';\n  display: block;\n  height: 12px;\n  margin: 3px 0;\n  width: 100%;\n  background: #bfbfbf;\n  animation: blinker 1s linear infinite;\n}\n@keyframes blinker {\n50% {\n    opacity: 0.5;\n}\n}\n", ""]);
+exports.push([module.i, "\n.app-table[data-v-76be0b53] {\n  margin-bottom: 20px;\n}\n.app-table__wrapper[data-v-76be0b53] {\n  overflow-x: auto;\n  border-radius: 4px;\n  padding-bottom: 20px;\n}\n.app-table__content[data-v-76be0b53] {\n  border-radius: 4px;\n  border: 1px solid #eee;\n}\n.app-table__content .app-table__header-item[data-v-76be0b53] {\n  cursor: move;\n}\n.app-table__content .app-table__header-item[data-v-76be0b53],\n.app-table__content .app-table-item__column[data-v-76be0b53] {\n  white-space: nowrap;\n  font-size: 12px;\n  padding: 10px;\n  border-right: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n.app-table__content .app-table__header-item[data-v-76be0b53]:last-child,\n.app-table__content .app-table-item__column[data-v-76be0b53]:last-child {\n  border-right: none;\n}\n.app-table__content .app-table-item:last-child .app-table-item__column[data-v-76be0b53] {\n  border-bottom: none;\n}\n.app-table__content .app-table-item:hover .app-table-item__column[data-v-76be0b53] {\n  cursor: pointer;\n  background: #fafafa;\n}\n.app-table-item--is-empty .app-table-item__column[data-v-76be0b53]:before {\n  content: '';\n  display: block;\n  height: 12px;\n  margin: 3px 0;\n  width: 100%;\n  background: #bfbfbf;\n  animation: blinker 1s linear infinite;\n}\n@keyframes blinker {\n50% {\n    opacity: 0.5;\n}\n}\n", ""]);
 
 // exports
 
@@ -519,7 +524,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\nfooter[data-v-edffa67c] {\n  padding: 20px 0;\n  background: #f0f0f0;\n}\n", ""]);
+exports.push([module.i, "\n.app-footer[data-v-edffa67c] {\n  padding: 20px 0;\n  background: #f0f0f0;\n}\n", ""]);
 
 // exports
 
@@ -533,7 +538,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\nheader[data-v-f5f86b98] {\n  padding-top: 20px;\n  padding-bottom: 20px;\n}\nheader h1[data-v-f5f86b98] {\n  font-size: 32px;\n  font-weight: 900;\n  color: #333;\n}\n", ""]);
+exports.push([module.i, "\n.app-header[data-v-f5f86b98] {\n  padding-top: 20px;\n  padding-bottom: 20px;\n}\n.app-header__title[data-v-f5f86b98] {\n  font-size: 32px;\n  font-weight: 900;\n  color: #333;\n}\n", ""]);
 
 // exports
 
@@ -782,41 +787,42 @@ module.exports = Component.exports
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "modal fade"
+    staticClass: "app-modal modal fade"
   }, [_c('div', {
-    staticClass: "modal-dialog",
+    staticClass: "app-modal__dialog modal-dialog",
     attrs: {
       "role": "document"
     }
   }, [_c('div', {
-    staticClass: "modal-content"
+    staticClass: "app-modal__content modal-content"
   }, [_c('div', {
-    staticClass: "modal-body"
+    staticClass: "app-modal__body modal-body"
   }, [_vm._m(0), _c('div', {
-    staticClass: "modal__content"
+    staticClass: "app-modal__inner"
   }, [(Object.keys(_vm.data).length === 0) ? _c('img', {
-    staticClass: "modal__content-placeholder",
+    staticClass: "app-modal__inner-placeholder",
     attrs: {
       "src": __webpack_require__(24)
     }
   }) : _vm._e(), _vm._l((_vm.data), function(value, key) {
     return _c('div', {
-      staticClass: "modal-content-item"
+      staticClass: "app-modal-content-item"
     }, [_c('div', {
-      staticClass: "modal-content-item__title"
+      staticClass: "app-modal-content-item__title"
     }, [_vm._v(_vm._s(_vm.dic[key]))]), _c('div', {
-      staticClass: "modal-content-item__value"
+      staticClass: "app-modal-content-item__value"
     }, [_vm._v(_vm._s(value))])])
   })], 2)])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('button', {
-    staticClass: "close",
+    staticClass: "app-modal__close-button close",
     attrs: {
       "type": "button",
       "data-dismiss": "modal",
       "aria-label": "Close"
     }
   }, [_c('span', {
+    staticClass: "app-modal__close-icon",
     attrs: {
       "aria-hidden": "true"
     }
@@ -861,14 +867,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "app-table"
   }, [_c('div', {
-    staticClass: "container"
+    staticClass: "app-table__inner container"
   }, [_c('div', {
     staticClass: "app-table__wrapper dragscroll"
   }, [_c('table', {
     staticClass: "app-table__content"
-  }, [_c('tr', _vm._l((_vm.columns), function(column) {
-    return _c('th', [_vm._v("\n                        " + _vm._s(column) + "\n                    ")])
-  })), _vm._l((_vm.data), function(datum) {
+  }, [_c('thead', {
+    staticClass: "app-table__header"
+  }, [_c('tr', {
+    staticClass: "app-table__header-inner"
+  }, _vm._l((_vm.columns), function(column) {
+    return _c('th', {
+      staticClass: "app-table__header-item"
+    }, [_vm._v("\n                            " + _vm._s(column) + "\n                        ")])
+  }))]), _c('tbody', {
+    staticClass: "app-table__body"
+  }, _vm._l((_vm.data), function(datum) {
     return _c('tr', {
       class: ['app-table-item', Object.keys(datum).length == 1 ? 'app-table-item--is-empty' : ''],
       on: {
@@ -878,12 +892,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, _vm._l((datum), function(parameter) {
       return _c('td', {
+        staticClass: "app-table-item__column",
         attrs: {
           "colspan": Object.keys(datum).length == 1 ? _vm.columns.length : 1
         }
       }, [_vm._v(_vm._s(parameter))])
     }))
-  })], 2)])])])
+  }))])])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -900,8 +915,10 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('footer', [_c('div', {
-    staticClass: "container"
+  return _c('footer', {
+    staticClass: "app-footer"
+  }, [_c('div', {
+    staticClass: "app-footer__inner container"
   }, [_vm._v("\n        © 2017 Well Done\n    ")])])
 }]}
 module.exports.render._withStripped = true
@@ -920,8 +937,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('header', {
-    staticClass: "container"
-  }, [_c('h1', [_vm._v("Акты об оказании услуг")])])
+    staticClass: "app-header container"
+  }, [_c('h1', {
+    staticClass: "app-header__title"
+  }, [_vm._v("Акты об оказании услуг")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

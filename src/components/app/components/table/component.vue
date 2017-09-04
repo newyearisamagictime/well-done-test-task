@@ -1,19 +1,24 @@
 <template>
     <div class="app-table">
-        <div class="container">
+        <div class="app-table__inner container">
             <div class="app-table__wrapper dragscroll">
                 <table class="app-table__content">
-                    <tr>
-                        <th v-for="column in columns">
-                            {{column}}
-                        </th>
-                    </tr>
-                    <tr v-for="datum in data" @click="openModal(datum.Id)" v-bind:class="['app-table-item', Object.keys(datum).length == 1 ? 'app-table-item--is-empty' : '']">
-                        <td
-                            v-for="parameter in datum"
-                            v-bind:colspan="Object.keys(datum).length == 1 ? columns.length : 1"
-                        >{{parameter}}</td>
-                    </tr>
+                    <thead class="app-table__header">
+                        <tr class="app-table__header-inner">
+                            <th v-for="column in columns" class="app-table__header-item">
+                                {{column}}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="app-table__body">
+                        <tr v-for="datum in data" @click="openModal(datum.Id)" v-bind:class="['app-table-item', Object.keys(datum).length == 1 ? 'app-table-item--is-empty' : '']">
+                            <td
+                                class="app-table-item__column"
+                                v-for="parameter in datum"
+                                v-bind:colspan="Object.keys(datum).length == 1 ? columns.length : 1"
+                            >{{parameter}}</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -84,10 +89,10 @@
         &__content
             border-radius: 4px
             border: 1px solid #eee
-            th
+            .app-table__header-item
                 cursor: move
-            th
-            td
+            .app-table__header-item
+            .app-table-item__column
                 white-space: nowrap
                 font-size: 12px
                 padding: 10px
@@ -95,16 +100,16 @@
                 border-bottom:  1px solid #eee
                 &:last-child
                     border-right: none
-            tr:last-child
-                td
+            .app-table-item:last-child
+                .app-table-item__column
                     border-bottom: none
-            tr:hover
-                td
+            .app-table-item:hover
+                .app-table-item__column
                     cursor: pointer
                     background: #fafafa
         &-item
             &--is-empty
-                td
+                .app-table-item__column
                     &:before
                         content: ''
                         display: block

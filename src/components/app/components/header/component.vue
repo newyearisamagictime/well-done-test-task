@@ -1,14 +1,14 @@
 <template>
-    <header class="container">
-        <h1>Акты об оказании услуг</h1>
+    <header class="app-header container">
+        <h1 class="app-header__title">Акты об оказании услуг</h1>
     </header>
 </template>
 
 <style lang="stylus" type="text/stylus" scoped>
-    header
+    .app-header
         padding-top: 20px
         padding-bottom: 20px
-        h1
+        &__title
             font-size: 32px
             font-weight: 900
             color: #333

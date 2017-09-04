@@ -1,16 +1,16 @@
 <template>
-    <div class="modal fade">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+    <div class="app-modal modal fade">
+        <div class="app-modal__dialog modal-dialog" role="document">
+            <div class="app-modal__content modal-content">
+                <div class="app-modal__body modal-body">
+                    <button type="button" class="app-modal__close-button close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="app-modal__close-icon">&times;</span>
                     </button>
-                    <div class="modal__content">
-                        <img src="./no-content.png" class="modal__content-placeholder" v-if="Object.keys(data).length === 0">
-                        <div class="modal-content-item" v-for="(value, key) in data">
-                            <div class="modal-content-item__title">{{dic[key]}}</div>
-                            <div class="modal-content-item__value">{{value}}</div>
+                    <div class="app-modal__inner">
+                        <img src="./no-content.png" class="app-modal__inner-placeholder" v-if="Object.keys(data).length === 0">
+                        <div class="app-modal-content-item" v-for="(value, key) in data">
+                            <div class="app-modal-content-item__title">{{dic[key]}}</div>
+                            <div class="app-modal-content-item__value">{{value}}</div>
                         </div>
                     </div>
                 </div>
@@ -76,9 +76,9 @@
 </script>
 
 <style lang="stylus" type="text/stylus" scoped>
-    .close
+    .app-modal__close-button
         z-index: 10
-    .modal-content-item
+    .app-modal-content-item
         margin-bottom: 10px
         &:first-child
             margin-top: 5px
@@ -87,7 +87,7 @@
         &__title
             font-weight: bold
             color: #333
-    .modal__content-placeholder
+    .app-modal__inner-placeholder
         animation: blinker 1s linear infinite;
     @keyframes blinker
         50%
